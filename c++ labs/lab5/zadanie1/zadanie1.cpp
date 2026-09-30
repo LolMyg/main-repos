@@ -25,7 +25,7 @@ int main() {
         return 1;
     }
 
-    if (a < 0) {
+    if (a <= 0) {
         std::cout << "Ошибка: для корня x нужно a >= 0" << std::endl;
         return 1;
     }
