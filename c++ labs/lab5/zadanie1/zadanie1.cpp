@@ -34,10 +34,11 @@ int main() {
     std::cout << "   x   |  f(x)  " << std::endl;
     std::cout << "==================" << std::endl;
 
+    std::cout << std::fixed << std::setprecision(4);
+
     for (double x = a; x <= b + 1e-9; x += h) {
         double y = f(x);
 
-        std::cout << std::fixed << std::setprecision(4);
         std::cout << std::setw(7) << x << " | " << std::setw(7) << y << std::endl;
     }
 
