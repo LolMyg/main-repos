@@ -1,0 +1,13 @@
+﻿body {
+    font-family: Arial, sans-serif; /* Шрифт и резервное семейство */
+    font-size: 1rem; /* Размер шрифта */
+    color: #333333; /* Тёмно-серый цвет текста */
+    margin: 0; /* Сброс стандартных отступов браузера */
+
+    background-image: url('images/tile.png'); /* Путь к картинке */
+    background-repeat: repeat; /* Не повторять картинку */
+    background-size: auto; /* Растянуть на весь экран */
+    background-position: top left; /* Центрировать */
+    background-attachment: scroll; /* Зафиксировать при прокрутке */
+    background-color: #1ba11a;
+}
