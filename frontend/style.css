@@ -1,13 +1,170 @@
-﻿body {
-    font-family: Arial, sans-serif; /* Шрифт и резервное семейство */
-    font-size: 1rem; /* Размер шрифта */
-    color: #333333; /* Тёмно-серый цвет текста */
-    margin: 0; /* Сброс стандартных отступов браузера */
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-    background-image: url('images/tile.png'); /* Путь к картинке */
-    background-repeat: repeat; /* Не повторять картинку */
-    background-size: auto; /* Растянуть на весь экран */
-    background-position: top left; /* Центрировать */
-    background-attachment: scroll; /* Зафиксировать при прокрутке */
+:root {
+    --a-link: blue;
+    --a-visited: darkslateblue;
+    --a-hover: darkblue;
+    --a-active: deepskyblue;
+    --main-background: darkgreen;
+    --second-background: forestgreen;
+    --header-background: seagreen;
+    --nav-background: mediumseagreen;
+    --news-background: lightblue;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    margin: 0; 
+
+    background-image: url('images/tile.png');
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: scroll;
     background-color: #1ba11a;
+}
+
+.important {
+    color: red;
+    font-weight: 800;
+}
+
+.highlight {
+    background-color: greenyellow;
+}
+
+#news {
+    background-color: var(--news-background);
+    border: groove;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', Arial;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: darkblue;
+}
+
+h3 {
+    color: darkred;
+}
+
+h4 {
+    color: black;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: square;
+}
+
+a:link {
+    color: var(--a-link);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--a-visited);
+}
+
+a:hover {
+    color: var(--a-hover);
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--a-active);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0.1rem;
+}
+
+nav a:visited {
+    color: var(--a-link);
+}
+
+nav a:hover {
+    color: var(--a-hover);
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: var(--a-active);
+}
+
+blockquote {
+    color: lightgreen;
+    font-style:italic;
+    margin: 0;
+    padding: 0.5rem;
+    border: groove;
+    background-color: var(--second-background);
+}
+
+header {
+    background-color: var(--header-background);
+    margin: 0;
+    padding: 0.5rem;
+    border: groove;
+}
+
+nav {
+    background-color: var(--nav-background);
+    margin: 0;
+    padding: 0;
+    border: groove;
+}
+
+main {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+section {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--main-background);
+    border: groove;
+}
+
+article {
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--second-background);
+    border: groove;
+}
+
+aside {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--second-background);
+    border: groove;
+}
+
+footer {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: white;
+    border: groove;
+    border-color: black;
 }
