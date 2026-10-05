@@ -11,11 +11,11 @@ int main()
     
     for (int x = 0; x < SIZE; x++) {
         std::cout << "massiv[" << x << "] = ";
-        std::cin >> massiv[x];
+        std::cin >> massiv[x]; //ввод значений массива с клавиатуры
     }
 
     for (int i = 0; i < SIZE; i++) {
-        if (massiv[i] % 2 == 0) {
+        if (massiv[i] % 2 == 0) { //проверка элемента массива на четность
             num += 1;
         }
     }

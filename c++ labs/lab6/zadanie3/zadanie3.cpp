@@ -15,7 +15,7 @@ int main()
     std::cout << "Исходный массив: " << "\n";
 
     for (int x = 0; x < SIZE-1; x++) {
-        massiv[x] = dis(gen);
+        massiv[x] = dis(gen); //создание случайного массива
         std::cout << massiv[x] << ", ";
     }
 
@@ -35,9 +35,9 @@ int main()
     }
 
     for (int i = SIZE-1; i > pos; i--) {
-        massiv[i] = massiv[i - 1];
+        massiv[i] = massiv[i - 1]; //сдвиг массива вправо
     }
-    massiv[pos] = chislo;
+    massiv[pos] = chislo; 
     std::cout << "Новый массив:" << "\n";
 
     for (int z = 0; z < SIZE; z++) {
