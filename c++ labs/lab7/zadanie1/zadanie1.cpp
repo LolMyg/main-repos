@@ -1,17 +1,33 @@
 ﻿#include <iostream>
 
-int main()
-{
-    const int SIZE = 5;
-    int massiv[SIZE] = { 1,2,3,4,5 };
+int main() {
+    setlocale(LC_ALL, "ru");
 
-    for (int i = 0; i < SIZE / 2; i++) {
-        int temp = massiv[i];
-        massiv[i] = massiv[SIZE - 1 - i];
-        massiv[SIZE - 1 - i] = temp;
-        std::cout << temp;
+    const int ROWS = 4, COLS = 3;
+    int matrix[ROWS][COLS], i, j;
+
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            std::cout << "значение матрицы[" << i << "][" << j << "]: ";
+            std::cin >> matrix[i][j]; //ввод матрицы с клавиатуры
+            if (std::cin.fail()) {
+                std::cout << "ошибка ввода";
+                return 1;
+            }
+        }
     }
-    for (int x = 0;x < SIZE;x++) {
-        //std::cout << massiv[x] << " ";
+
+    int minVal = matrix[0][0], minCols = 0, minRows = 0;
+
+    for (i = 0; i < ROWS; i++) {
+        for (j = 0; j < COLS; j++) {
+            if (matrix[i][j] < minVal) { //поиск минимального значения матрицы
+                minVal = matrix[i][j];
+                minRows = i;
+                minCols = j;
+            }
+        }
     }
+
+    std::cout << "Минимальное значение в строке " << minRows << " и столбце " << minCols << " - " << minVal;
 }
