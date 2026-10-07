@@ -1,5 +1,9 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --a-link: blue;
     --a-visited: darkslateblue;
@@ -27,6 +31,10 @@ body {
     background-position: top left;
     background-attachment: scroll;
     background-color: #1ba11a;
+}
+
+.page {
+    display: grid;
 }
 
 .important {
@@ -94,9 +102,10 @@ nav ul {
     list-style: none;
     display: flex;
     font-size: 1rem;
-    gap: 1rem;
-    margin: 1rem;
-    padding: 0.1rem;
+    gap: 4rem;
+    margin: 2rem;
+    padding: 0;
+    justify-content: center;
 }
 
 nav a:visited {
@@ -122,9 +131,11 @@ blockquote {
 }
 
 header {
+    display: flex;
     background-color: var(--header-background);
     margin: 0;
     padding: 0.5rem;
+    gap: 1rem;
     border: groove;
 }
 
