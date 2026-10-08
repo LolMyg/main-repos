@@ -8,54 +8,59 @@
 </head>
 
 <body>
+    <div class="page">
 
-    <header>
-        <h1>Обо мне</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">Обо мне</a></li>
-                <li><a href="friends.html">Друзья</a></li>
-                <li><a href="hobbies.html">Увлечения</a></li>
-                <li><a href="group.html">Группа</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <div class="logo">
+                <h1>Обо мне</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="friends.html">Друзья</a></li>
+                    <li><a href="hobbies.html">Увлечения</a></li>
+                    <li><a href="group.html">Группа</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <hr />
+        <main>
 
-    <main>
+            <p>
+                <a href="#skills">Перейти к навыкам</a>
+            </p>
 
-        <p>
-            <a href="#skills">Перейти к навыкам</a>
-        </p>
+            <section>
+                <h2>Биография</h2>
 
-        <section id="bio">
-            <h2>Биография</h2>
-            <article>
-                <p class="important">Я - Спирянов Илья Вячеславович.</p>
-                <p>Рожден в городе Ставрополь.</p>
-                <p>Учусь в Северо Кавказском Федеральном Университете.</p>
-                <p>Вот моё фото:</p>
-                <img src="images/my_profile.jpg" alt="Моё фото" width="180" height="180" />
-            </article>
-        </section>
+                <div class="cards">
+                    <article class="card">
+                        <img src="images/my_profile.jpg" alt="Моё фото" />
+                    </article>
+                    <article class="card">
+                        <p class="important">Я - Спирянов Илья Вячеславович.</p>
+                        <p>Рожден в городе Ставрополь.</p>
+                        <p>Учусь в Северо Кавказском Федеральном Университете.</p>
+                        <p>Вот моё фото:</p>
+                    </article>
+                </div>
 
-        <hr />
+            </section>
 
-        <section id="skills">
-            <h2>Навыки</h2>
-            <article>
-                <dl>
-                    <dt>Умею писать лёгкие программы на Python</dt>
-                    <dd>Например: <code>print("Hello World")</code></dd>
-                    <dt>Способен на самообучение</dt>
-                    <dd>Надеюсь</dd>
-                </dl>
-            </article>
-        </section>
+            <section id="skills">
+                <h2>Навыки</h2>
+                <article>
+                    <dl>
+                        <dt>Умею писать лёгкие программы на Python</dt>
+                        <dd>Например: <code>print("Hello World")</code></dd>
+                        <dt>Способен на самообучение</dt>
+                        <dd>Надеюсь</dd>
+                    </dl>
+                </article>
+            </section>
 
-        <hr />
+        </main>
 
         <aside>
             <h3>Интересный факт</h3>
@@ -66,11 +71,10 @@
             </p>
         </aside>
 
-    </main>
+        <footer>
+            <p>&copy; 2026 Спирянов Илья Вячеславович</p>
+        </footer>
 
-    <footer>
-        <p>&copy; 2026 Спирянов Илья Вячеславович</p>
-    </footer>
-
+    </div>
 </body>
 </html>

@@ -8,42 +8,47 @@
 </head>
 
 <body>
+	<div class="page">
 
-	<header>
-		<h1>Мои друзья</h1>
-		<nav>
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="about.html">Обо мне</a></li>
-				<li><a href="friends.html">Друзья</a></li>
-				<li><a href="hobbies.html">Увлечения</a></li>
-				<li><a href="group.html">Группа</a></li>
-			</ul>
-		</nav>
-	</header>
+		<header>
+			<div class="logo">
+				<h1>Мои друзья</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Обо мне</a></li>
+					<li><a href="friends.html">Друзья</a></li>
+					<li><a href="hobbies.html">Увлечения</a></li>
+					<li><a href="group.html">Группа</a></li>
+				</ul>
+			</nav>
+		</header>
 
-	<hr />
+		<main>
 
-	<main>
-
-		<section id="friends">
-			<h2>Мои друзья:</h2>
-			<article>
+			<section id="friends">
+				<h2>Мои друзья:</h2>
 				<p>Хоть у меня друзей немного, но они хорошие.</p>
-				<dl>
-					<dt>Костя</dt>
-					<dd>Любит музыку <img src="images/music.png" alt="Музыка" width="20" height="20" /></dd>
 
-					<dt>Дима</dt>
-					<dd>Любит игры <img src="images/game.png" alt="Игры" width="20" height="20" /></dd>
+				<div class="cards">
+					<article class="card">
+						Костя
+						Любит музыку <img src="images/music.png" alt="Музыка" width="20" height="20" />
+					</article>
+					<article class="card">
+						Дима
+						Любит игры <img src="images/game.png" alt="Игры" width="20" height="20" />
+						</article>
+					<article class="card">
+						Юра
+						Любит фильмы <img src="images/movie.png" alt="Фильмы" width="20" height="20" />
+					</article>
+				</div>
 
-					<dt>Юра</dt>
-					<dd>Любит фильмы <img src="images/movie.png" alt="Фильмы" width="20" height="20" /></dd>
-				</dl>
-			</article>
-		</section>
+			</section>
 
-		<hr />
+		</main>
 
 		<aside>
 			<h3>О дружбе</h3>
@@ -53,11 +58,10 @@
 			</p>
 		</aside>
 
-	</main>
+		<footer>
+			<p>&copy; 2026 Спирянов Илья Вячеславович</p>
+		</footer>
 
-	<footer>
-		<p>&copy; 2026 Спирянов Илья Вячеславович</p>
-	</footer>
-
+	</div>
 </body>
 </html>
