@@ -1,20 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@media (max-width: 900px) {
-    .page {
-        grid-template-columns: 1fr;
-        grid-template-areas: "header" "main" "aside" "footer"
-    }
-    .logo {
-        min-width: auto;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-*, *::before, *::after {
+* {
     box-sizing: border-box;
 }
 
@@ -71,6 +57,15 @@ body {
 
 .logo {
     min-width: 250px;
+}
+
+.burger {
+    display: none;
+    background-color: transparent;
+    margin: 25px;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 30px;
 }
 
 .important {
@@ -171,8 +166,8 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
-    margin: 1rem;
+    gap: 50px;
+    margin: 35px;
     padding: 0;
     justify-content: center;
 }
@@ -231,4 +226,66 @@ footer {
     border: groove;
     border-color: black;
     grid-area: footer;
+}
+
+@media (max-width: 1023px) { /*для планшета*/
+    .page {
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+            "header header"
+            "aside  main"
+            "footer footer";
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px) { /*для телефона*/
+    .page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 20%;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    section, article {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    aside {
+        display: none;
+    }
 }
