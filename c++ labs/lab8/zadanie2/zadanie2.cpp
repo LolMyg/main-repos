@@ -4,7 +4,7 @@
 int main()
 {
     setlocale(LC_ALL, "ru");
-    std::string word; //создание двух переменных строк
+    std::string word; //создание переменной строки
     std::cout << "Введите слово: ";
     std::getline(std::cin, word); //запись строки с клавиатуры
 
